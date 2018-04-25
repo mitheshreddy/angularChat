@@ -1,0 +1,9 @@
+<!-- conversations -->
+<div class="row">
+  <div class="conversation-wrap">
+
+    <chat-thread *ngFor="let user of users | async" [user]="user">
+    </chat-thread>
+
+  </div>
+</div>

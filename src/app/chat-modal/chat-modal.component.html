@@ -1,0 +1,17 @@
+<div class="modal fade" tabindex="-1" [ngClass]="{'in': modalVisibleAnimate}" [ngStyle]="{'display': modalVisible ? 'block' : 'none', 'opacity': modalVisibleAnimate? 1 : 0}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"> {{ modalContent.header }}</h4>
+            </div>
+            <div class="modal-body">
+                <!--<div id="googleBtn">Google</div>-->
+                <input #inputText class="input-text" type="text" autofocus placeholder="Enter your name..." (keyup.enter)="ok(inputText.value)"
+                />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" (click)="ok(inputText.value)"> {{modalContent.OKButtonText}} </button>
+            </div>
+        </div>
+    </div>
+</div>

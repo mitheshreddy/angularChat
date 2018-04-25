@@ -1,0 +1,14 @@
+.modal {
+    background: rgba(0,0,0,0.6);
+  }
+  .input-text {
+    height: 100%;
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .modal-body {
+    height: 75px;
+    padding: 2px;
+  }
